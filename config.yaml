@@ -1,0 +1,20 @@
+name: "Remote Assistant Installer"
+slug: "remote_assistant_installer"
+description: "Automatically installs and updates the Remote Assistant Custom Component"
+version: "1.0.9"
+startup: services
+boot: auto
+hassio_api: true
+hassio_role: "manager"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+map:
+  - config:rw
+options: {
+  enable_restart: true
+}
+schema: {
+  enable_restart: bool
+}

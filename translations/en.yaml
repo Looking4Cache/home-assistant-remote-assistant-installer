@@ -1,0 +1,4 @@
+configuration:
+  enable_restart:
+    name: Restart Home Assistant
+    description: Enable or disable automatic restart of Home Assistant after installation or update.
