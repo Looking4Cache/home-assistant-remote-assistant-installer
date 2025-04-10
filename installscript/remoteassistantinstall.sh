@@ -88,7 +88,7 @@ install_or_update() {
 
   UNZIP_DIR=$(find /tmp/remote_assistant -maxdepth 1 -type d -name "home-assistant-remote-assistant-*")
   if [ -z "$UNZIP_DIR" ]; then
-    echo "❌ Error: Failed to find the extracted files."
+    log_error "❌ Failed to find the extracted files."
     exit 1
   fi
 
@@ -99,7 +99,7 @@ install_or_update() {
   rm "$TARGET_DIR/.gitignore"
 
   if [ ! -f "$MANIFEST_FILE" ]; then
-    echo "❌ Error: Installation failed."
+    log_error "❌ Installation failed."
     exit 1
   fi
 
