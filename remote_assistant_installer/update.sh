@@ -43,9 +43,7 @@ fi
 
 # Remove existing installation, copy directory 
 rm -rf "$TARGET_DIR"
-mv "$UNZIP_DIR" "$TARGET_DIR"
-rm -rf "$TARGET_DIR/.github"
-rm "$TARGET_DIR/.gitignore"
+mv "$UNZIP_DIR/custom_components/remote_assistant" "$TARGET_DIR"
 
 if [ ! -f "$MANIFEST_FILE" ]; then
     echo "❌ Error: Installation failed."

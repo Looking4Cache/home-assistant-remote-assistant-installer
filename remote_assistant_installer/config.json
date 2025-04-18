@@ -2,7 +2,7 @@
     "name": "Remote Assistant Installer",
     "slug": "remote_assistant_installer",
     "description": "Automatically installs and updates the Remote Assistant Custom Component",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "startup": "services",
     "boot": "auto",
     "hassio_api": true,
