@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$ENABLE_RESTART" = "true" ]; then
+if [ "${ENABLE_RESTART_OPTIONS}" = "true" ]; then
     echo "🔄 Restarting Home Assistant Core..."
     curl -s -X POST \
         -H "Authorization: Bearer $SUPERVISOR_TOKEN" \
