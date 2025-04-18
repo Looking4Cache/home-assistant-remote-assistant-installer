@@ -2,7 +2,7 @@
 name: Remote Assistant Installer
 slug: remote_assistant_installer
 description: Automatically installs and updates the Remote Assistant Custom Component
-version: 1.0.2
+version: 1.0.3
 url: https://github.com/Looking4Cache/home-assistant-remote-assistant-installer
 startup: services
 boot: auto
@@ -14,6 +14,8 @@ arch:
   - armv7
 map:
   - config:rw
+packages:
+  - jq
 options:
   enable_restart: true
 schema:

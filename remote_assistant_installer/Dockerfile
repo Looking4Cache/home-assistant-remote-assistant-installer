@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache git bash curl coreutils unzip
+RUN apk add --no-cache git bash curl coreutils unzip jq
 
 COPY run.sh /run.sh
 COPY update.sh /update.sh
