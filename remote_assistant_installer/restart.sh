@@ -8,7 +8,7 @@ if [[ -f "$CONFIG_FILE" ]]; then
         curl -s -X POST \
             -H "Authorization: Bearer $SUPERVISOR_TOKEN" \
             -H "Content-Type: application/json" \
-            http://supervisor/core/restartelse
+            http://supervisor/core/restart
     else
         echo "🔄 Please restart Home Assistant for the changes to take effect."
     fi
